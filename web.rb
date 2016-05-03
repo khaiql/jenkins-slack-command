@@ -13,11 +13,11 @@ post '/' do
   return [403, "No slack token setup"] unless slack_token = ENV['SLACK_TOKEN']
   return [403, "No jenkins url setup"] unless jenkins_url= ENV['JENKINS_URL']
   return [403, "No jenkins token setup"] unless jenkins_token= ENV['JENKINS_TOKEN']
-  return [403, "No restricted channel setup - FYI: #{params}"] unless restricted_channel = ENV['SLACK_CHANNEL']
+  return [403, "No restricted channel setup - FYI: #{params}"] unless restricted_channel = ENV['SLACK_CHANNEL_ID']
 
   # Verify slack token matches environment variable
   return [401, "No authorized for this command"] unless slack_token == params['token']
-  return [401, "Hey man, this is not a place where you can play around :3"] unless restricted_channel == params['channel_name']
+  return [401, "Hey man, this is not a place where you can play around :3"] unless restricted_channel == params['channel_id']
 
   # Split command text
   text_parts = params['text'].split(' ')
