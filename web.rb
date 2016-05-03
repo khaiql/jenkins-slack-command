@@ -17,6 +17,8 @@ post '/' do
 
   # Verify slack token matches environment variable
   return [401, "No authorized for this command"] unless slack_token == params['token']
+  puts "Restricted Channel: #{restricted_channel}"
+  puts params
   return [401, "Hey man, this is not a place where you can play around :3"] unless restricted_channel == params['channel_name']
 
   # Split command text
