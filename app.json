@@ -18,6 +18,10 @@
     "JENKINS_TOKEN": {
       "description": "API token of your user in Jenkins",
       "required": true
-    }
+    },
+    "SLACK_CHANNEL": {
+      "description": "The only channel where members of it can deploy",
+      "required": true
+    },
   }
 }

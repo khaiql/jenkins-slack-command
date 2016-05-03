@@ -16,7 +16,7 @@ Start a build in Jenkins using a Slack Command
   - `/jenkins MyAwesomeApp`
 - Start a parameterized build
   - `/jenkins MyAwesomeApp param1=value1 param2=value2`
-  
+
 ## In Progress
 - Error handling when staring the build fails
 
@@ -40,13 +40,13 @@ Start a build in Jenkins using a Slack Command
  - `JENKINS_URL` - URL to your Heroku instnace
  - `JENKINS_TOKEN` - API token of your user in Jenkins
    - The API token is available in your personal configuration page. Click your name on the top right corner on every page, then click "Configure" to see your API token. (The URL $root/me/configure is a good shortcut.) You can also change your API token from here.
-- Optional environment variables
-  - `SLACK_WEBHOOK_URL` - your incoming webhook URL
-  
+ - `SLACK_WEBHOOK_URL` - your incoming webhook URL
+ - `SLACK_CHANNEL` - The only channel where members of it can deploy
+
 ### 3. Spin up Heroku instance
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/joshdholtz/jenkins-slack-command)
-  
+
 ### 4. Execute command in Slack
 
 ```
