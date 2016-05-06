@@ -41,7 +41,8 @@ Start a build in Jenkins using a Slack Command
  - `JENKINS_TOKEN` - API token of your user in Jenkins
    - The API token is available in your personal configuration page. Click your name on the top right corner on every page, then click "Configure" to see your API token. (The URL $root/me/configure is a good shortcut.) You can also change your API token from here.
  - `SLACK_WEBHOOK_URL` - your incoming webhook URL
- - `SLACK_CHANNEL` - The only channel where members of it can deploy
+- Required but can be setup later
+ - `SLACK_CHANNEL_ID` - The only channel where members of it can deploy
 
 ### 3. Spin up Heroku instance
 

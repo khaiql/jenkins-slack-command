@@ -19,9 +19,9 @@
       "description": "API token of your user in Jenkins",
       "required": true
     },
-    "SLACK_CHANNEL": {
+    "SLACK_CHANNEL_ID": {
       "description": "The only channel where members of it can deploy",
-      "required": true
+      "required": false
     },
   }
 }
