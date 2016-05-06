@@ -22,6 +22,6 @@
     "SLACK_CHANNEL_ID": {
       "description": "The only channel where members of it can deploy",
       "required": false
-    },
+    }
   }
 }

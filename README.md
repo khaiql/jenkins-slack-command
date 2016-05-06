@@ -46,7 +46,7 @@ Start a build in Jenkins using a Slack Command
 
 ### 3. Spin up Heroku instance
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/joshdholtz/jenkins-slack-command)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/khaiql/jenkins-slack-command)
 
 ### 4. Execute command in Slack
 
